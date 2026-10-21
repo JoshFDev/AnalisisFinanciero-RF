@@ -247,7 +247,7 @@ def listar_archivos_carpeta(ruta, nivel=0):
 # ==========================================================
 #CARGAR DATASET REAL DE TIPO DE CAMBIO (EXCEL)
 # ==========================================================
-excel_path = r"C:\Users\jaboy\Downloads\ProyectoDos\ProyectoB1CD\ProyectoB1CD\datos\Consulta_20250923-093032320 (1).xlsx"
+excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'datos', 'Consulta_20250923-093032320 (1).xlsx')
 
 try:
     df_original = pd.read_excel(excel_path)
@@ -303,7 +303,7 @@ def generar_grafica():
 # EJECUCIÓN DEL SERVIDOR
 # ==========================================================
 if __name__ == "__main__":
-    ruta_proyecto = r"C:\Users\jaboy\Downloads\ProyectoDos\ProyectoB1CD\ProyectoB1CD"
+    ruta_proyecto = os.path.dirname(os.path.abspath(__file__))
     listar_archivos_carpeta(ruta_proyecto)
 
     os.makedirs("assets/imagenes/graficas", exist_ok=True)

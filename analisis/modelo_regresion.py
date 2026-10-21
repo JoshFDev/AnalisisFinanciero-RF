@@ -20,8 +20,9 @@ except ImportError:
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
     from analisis.procesar_datos import cargar_y_procesar_datos
 
-# Ruta absoluta al modelo Random Forest ya entrenado
-RUTA_MODELO = r"C:\Users\jaboy\OneDrive\Escritorio\ProyectoB1CD\modelo\modelo_random_forest_4vars.pkl"
+# Ruta al modelo Random Forest ya entrenado (relativa al proyecto)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RUTA_MODELO = os.path.join(ROOT, 'modelo', 'modelo_random_forest_4vars.pkl')
 
 # Cargar modelo al inicio
 if os.path.exists(RUTA_MODELO):

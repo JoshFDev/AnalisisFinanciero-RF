@@ -3,8 +3,9 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import joblib
 
-RUTA_INFLACION = r"C:\Users\jaboy\Downloads\ProyectoDos\ProyectoB1CD\ProyectoB1CD\datos\INFLACION (1).xlsx"
-RUTA_TIPOCAMBIO = r"C:\Users\jaboy\Downloads\ProyectoDos\ProyectoB1CD\ProyectoB1CD\datos\Consulta_20250923-093032320 (1).xlsx"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RUTA_INFLACION = os.path.join(ROOT, 'datos', 'INFLACION (1).xlsx')
+RUTA_TIPOCAMBIO = os.path.join(ROOT, 'datos', 'Consulta_20250923-093032320 (1).xlsx')
 
 # ===============================
 # CARGA DE LOS ARCHIVOS
