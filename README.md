@@ -275,8 +275,12 @@ Este modulo requiere una webcam disponible y las dependencias OpenCV y TensorFlo
 - El modulo de emociones requiere hardware de camara y puede no funcionar en entornos sin GUI o sin webcam.
 - El archivo `requirements.txt` original solo listaba dependencias basicas; se amplio para incluir OpenCV, TensorFlow, seaborn y joblib, necesarios para ejecutar todas las funcionalidades.
 
-## Autor
+## Autores
 
-Proyecto desarrollado por JoshFDev para la Universidad Autonoma del Estado de Mexico (UAEMex), area de Ciencia de Datos.
+Proyecto desarrollado para la Universidad Autonoma del Estado de Mexico (UAEMex), area de Ciencia de Datos, por los ingenieros en computacion:
+
+- Aboytes Uribe Joshua Sebastian
+- Cazares Hernandez Sergio Axel
+- Estrada Hernandez Agustin
 
 Repositorio: https://github.com/JoshFDev/AnalisisFinanciero-RF
